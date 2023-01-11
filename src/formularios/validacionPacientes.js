@@ -9,22 +9,23 @@
 //nombres-docuemento-registro del médico
 let nombresPaciente=datosPaciente.nombre1
 let identificacionPaciente=datosPaciente.identificacion1
-
+console.log(nombresPaciente)
+console.log(identificacionPaciente)
 
 //Agregar todos los caminos posibles para validar el formulario
 if(nombresPaciente=="" && identificacionPaciente==""){
     etiquetaNombre1.classList.add("is-invalid")
-    etiquetaIdentificacion1.classList.add("is.invalid")
+    etiquetaIdentificacion1.classList.add("is-invalid")
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
         text: 'Nombre y documento son obligatorios',  
 
       })
-      
+
 }else if(nombresPaciente=="" && identificacionPaciente!=""){
     etiquetaNombre1.classList.add("is-invalid")
-    etiquetaIdentificacion1.classList.remove("is.invalid")
+    etiquetaIdentificacion1.classList.remove("is-invalid")
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -32,7 +33,7 @@ if(nombresPaciente=="" && identificacionPaciente==""){
       })
 }else if(nombresPaciente!="" && identificacionPaciente==""){
     etiquetaNombre1.classList.remove("is-invalid")
-    etiquetaIdentificacion1.classList.add("is.invalid")
+    etiquetaIdentificacion1.classList.add("is-invalid")
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -40,7 +41,7 @@ if(nombresPaciente=="" && identificacionPaciente==""){
       })
 }else{
     etiquetaNombre1.classList.remove("is-invalid")
-    etiquetaIdentificacion1.classList.remove("is.invalid")
+    etiquetaIdentificacion1.classList.remove("is-invalid")
 }
 
 }
