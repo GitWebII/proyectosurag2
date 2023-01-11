@@ -14,7 +14,7 @@ let registroMedico=datos.registro
 //Agregar todos los caminos posibles para validar el formulario
 if(nombresMedico=="" && documentoMedico==""){
     etiquetaNombre.classList.add("is-invalid")
-    etiquetaDocumento.classList.add("is.invalid")
+    etiquetaDocumento.classList.add("is-invalid")
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -22,7 +22,7 @@ if(nombresMedico=="" && documentoMedico==""){
       })
 }else if(nombresMedico=="" && documentoMedico!=""){
     etiquetaNombre.classList.add("is-invalid")
-    etiquetaDocumento.classList.remove("is.invalid")
+    etiquetaDocumento.classList.remove("is-invalid")
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -30,7 +30,7 @@ if(nombresMedico=="" && documentoMedico==""){
       })
 }else if(nombresMedico!="" && documentoMedico==""){
     etiquetaNombre.classList.remove("is-invalid")
-    etiquetaDocumento.classList.add("is.invalid")
+    etiquetaDocumento.classList.add("is-invalid")
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -38,7 +38,7 @@ if(nombresMedico=="" && documentoMedico==""){
       })
 }else{
     etiquetaNombre.classList.remove("is-invalid")
-    etiquetaDocumento.classList.remove("is.invalid")
+    etiquetaDocumento.classList.remove("is-invalid")
 }
 
 }
